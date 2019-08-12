@@ -1,0 +1,53 @@
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  letter-spacing: .2em;
+  color: #333;
+  animation: rainbowtext 2.5s ease-in paused infinite;
+}
+h1:hover {
+  animation-play-state: running;
+}
+
+#Kyiv, #London, #New_York{
+	height: 45px;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  background: #5dbdb1;
+  color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 3px rgba(0,0,0,.4);
+	outline: none;
+}
+
+#Kyiv:hover, #London:hover, #New_York:hover{
+	background: #66cfc2;
+	outline: none;
+}
+
+#Kyiv:active, #London:active, #New_York:active{
+	background: #fff;
+	outline: none;
+}
+
+#Kyiv:focus, #London:focus, #New_York:focus{
+	background:grey;
+}
+
+/*[ANIMATION]*/
+
+@keyframes rainbowtext{
+  0% {
+    color: #333;
+    
+  }
+  50% {
+    color: #5dbdb1;
+    
+  }
+  100% {
+    color: #333;
+  }
+}

@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<h1>
+		Weather App
+	</h1>
+	<h2>
+		Results
+	</h2>
+
+		<p><strong><%=data.name%></strong></p>
+		<p>
+			<strong>Temperature: </strong><%=data['main'].temp%> °C
+		</p>
+		<p>
+			<strong>Atmospheric pressure: </strong><%=data['main'].pressure%> hPa
+		</p>
+		<p>
+			<strong>Humidity: </strong> - <%=data['main'].humidity%> %
+		</p>
+		<p>
+			<strong>Wind speed: </strong><%=data['wind'].speed%> meter/sec
+		</p>
+		<p>
+			<strong>Wind direction: </strong><%=data['wind'].deg%> °
+		</p>
+
+	<form action="/">
+		<input id="Kyiv" type="submit" value="Kyiv" name="q"/>
+		<input id="London" type="submit" value="London" name="q"/>
+		<input id="New_York" type="submit" value="New York" name="q"/>
+	</form>
+</div>
+
+<% include ../partials/footer %>
